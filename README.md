@@ -89,7 +89,22 @@ Azure Arc is a set of technologies that helps manage your cloud environment. Azu
 # Azure VMware Solution
 What if you’re already established with VMware in a private cloud environment but want to migrate to a public or hybrid cloud? Azure VMware Solution lets you run your VMware workloads in Azure with seamless integration and scalability.
 
+# Describing the data warehousing architecture:
 
+![image](https://github.com/user-attachments/assets/f24d5592-3408-417d-82a6-b16dfed6129a)
+
+1. Data ingestion and processing - data is loaded into a data lake or relational data warehouse. The load operation usually involves extract, transform and load(ETL) or extract, load, and transform (ELT) process in which the data is cleaned, filtered, and restructured for analysis. In ETL processes, the data is transformed before being loaded into an analytical store, while in an ELT process the data is copied to the store and then transformed. Either way, the resulting data structure is optimized for analytical queries. The data processing is often performed by distributed systems that can process high volumes of data in parallel using multi-node clusters. Data ingestion includes both batch processing of static data and real-time processing of streaming data.
+
+2. Analytical data store - data stores for large scale analytics include relational data warehouses, file-system based data lakes, and hybrid architectures that combine features of data warehouses and data lakes (sometimes called data lakehouses or lake databases). We'll discuss these in more depth later.
+
+3. Analytical data model – while data analysts and data scientists can work with the data directly in the analytical data store, it’s common to create one or more data models that pre-aggregate the data to make it easier to produce reports, dashboards, and interactive visualizations. Often these data models are described as cubes, in which numeric data values are aggregated across one or more dimensions (for example, to determine total sales by product and region). The model encapsulates the relationships between data values and dimensional entities to support "drill-up/drill-down" analysis.
+
+4. Data visualization – data analysts consume data from analytical models, and directly from analytical stores to create reports, dashboards, and other visualizations. Additionally, users in an organization who may not be technology professionals might perform self-service data analysis and reporting. The visualizations from the data show trends, comparisons, and key performance indicators (KPIs) for a business or other organization, and can take the form of printed reports, graphs and charts in documents or PowerPoint presentations, web-based dashboards, and interactive environments in which users can explore data visually.
+
+
+# Explore data ingestion pipelines:
+
+![image](https://github.com/user-attachments/assets/4051784f-00df-48cb-a586-3f5e7989712f)
 
 
 
