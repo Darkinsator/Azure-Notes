@@ -106,7 +106,14 @@ What if you’re already established with VMware in a private cloud environment 
 
 ![image](https://github.com/user-attachments/assets/4051784f-00df-48cb-a586-3f5e7989712f)
 
+#Explore analytical data stores:
 
+![image](https://github.com/user-attachments/assets/c2781b58-bc49-4a8c-bbb2-001064fa6437)
+
+![image](https://github.com/user-attachments/assets/7454ce9d-7ea6-49d8-b356-41a4391e829c)
+
+
+   
 
 
 
